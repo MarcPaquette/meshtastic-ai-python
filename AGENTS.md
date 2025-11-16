@@ -1,9 +1,10 @@
 ## Build/Lint/Test Commands
-- Install dependencies: `venv/bin/pip install -r requirements.txt`
-- Run all tests: `venv/bin/python -m pytest`
-- Run single test: `venv/bin/python -m pytest tests/test_file.py::TestClass::test_method`
-- Lint: `venv/bin/python -m flake8 .`
-- Format: `venv/bin/python -m black .`
+- Install dependencies: `source venv/bin/activate && pip install -r requirements.txt`
+- Run all tests: `source venv/bin/activate && python -m pytest`
+- Run single test: `source venv/bin/activate && python -m pytest tests/test_file.py::TestClass::test_method`
+- Lint: `source venv/bin/activate && python -m flake8 .`
+- Format: `source venv/bin/activate && python -m black .`
+- Validate scripts: `source venv/bin/activate && python <script_name>.py` after changes
 
 ## Architecture
 - Language: Python 3.8+
